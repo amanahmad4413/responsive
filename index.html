@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 /">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>Website Layout</title>
+</head>
+
+<body id="home">
+
+
+    <header class="hero">
+        <div class="mypage">
+            <div class="navbar" id="navbar">
+                <div class="logo">
+                    <button class="text-primary" id="light"></i>LIGHT</span>
+                        <button class="text-primary" id="wire">WIRE</span>
+                </div>
+
+                <div id="mobile-menu">
+                    <div id="mobile-nav-icon">
+                        <span></span>
+                    </div>
+
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="#en">EN</a></li>
+                        <li><a href="#es">ES</a></li>
+                        <li><a href="#ar">AR</a></li>
+                        <li class="fa fa-search" id="search" aria-hidden="true"></li>
+                        <li class="fa fa-shopping-bag" id="bag" aria-hidden="true"></li>
+                    </ul>
+                </nav>
+                <div class="nav-date">
+                    <span class="week">MON - FRI 8AM - 5PM</span>
+                    <span class="mobnum">(02) 123 456 000</span>
+                </div>
+                <button class="btn-1" type="button">GET IN TOUCH</button>
+
+
+            </div>
+
+
+
+            <nav class="navbar2" id="navbar2">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#pages">PAGES</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#blog">BLOG</a></li>
+                    <li><a href="#elements">ELEMENTS</a></li>
+
+                </ul>
+            </nav>
+
+            <div id="mobile-nav">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#pages">PAGES</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#blog">BLOG</a></li>
+                    <li><a href="#elements">ELEMENTS</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="content">
+            <div style="position: relative;">
+                <img src="assets/builders_image-1.jpg" alt="builders_image-1">
+                <div class="mypage">
+                    <div id="text">
+                        <h1 class="heading-1">WE ARE FOCUSED ON BUILD <br> STRONG RELATIONS</h1>
+                        <p class="para-1">Stunning homes that moves the spirit have always been rare.In every case
+                            <br>they are unique, poetic, products of heart. Explore us now.
+                        </p>
+                        <div class="banner-buttons">
+                            <button class="btn-2" type="button">CONTACT US</button>
+                            <button class="btn-3" type="button">VIEW SERVICES</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Cards -->
+    <div class="mypage">
+        <div class="row">
+            <div class="column">
+                <div class="card-1">
+                    <img src="assets/imgcard-1.jpg" alt="Image  1" style="width:100%">
+                    <div class="card-text">
+                        <h1>MANUFACTURING</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit laboriosam totam velit hic
+                            expedita at esse quae id libero. </p>
+                        <button>VEIW SERVICE</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card-2" style="overflow:hidden;">
+                    <img src="assets/imgcard-2.jpg" alt="Image 2">
+                    <div class="card-text">
+                        <h1>BUILDINGS</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit laboriosam totam velit hic
+                            expedita at esse quae id libero. </p>
+                        <button>VEIW SERVICE</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card-3">
+                    <div class="card-text">
+                        <h1>FEATURED WEEK PROJECTS</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit laboriosam totam velit hic
+                            expedita at esse quae id libero. </p>
+
+                        <ul class="client-works">
+                            <li>
+                                <i class="fa fa-cog" aria-hidden="true" id="cardservices"><span
+                                        class="countwork">110</span></i>
+
+                                <span class="works">Works</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-user" aria-hidden="true" id="carduser"></i>
+                                <span class="countusers">90</span><br>
+                                <span class="clients">Clients</span>
+                            </li>
+                        </ul>
+                        <button>MORE PROJECTS</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var mobileNav = document.getElementById('mobile-nav-icon');
+        var mobileMenu = document.getElementById('mobile-nav');
+        mobileNav.addEventListener('click', function () {
+            this.classList.toggle("close");
+            mobileMenu.classList.toggle("overlay");
+        });
+
+    </script>
+</body>
+
+</html>
